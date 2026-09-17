@@ -7,7 +7,7 @@ const platforms = [
   {name:"airSlate SignNow",slug:"signnow",href:"/platforms/signnow",logo:"https://marketing-static.signnow.com/385/images/global/svg/signNow-logo-Colored.svg"},
   {name:"Docusign",slug:"docusign",href:"/platforms/docusign",logo:"/platform-docusign.svg"},
   {name:"Oracle NetSuite",slug:"netsuite",href:"/platforms/netsuite",logo:"/platform-netsuite.svg"},
-  {name:"AWS",slug:"aws",href:"/platforms/aws",logo:"https://m.media-amazon.com/images/G/01/amazonwebservices/AWS_logo_RGB.png"},
+  {name:"AWS",slug:"aws",href:"/platforms/aws",logo:"/platform-aws.svg"},
 ];
 
 export default function PlatformExpertise(){
