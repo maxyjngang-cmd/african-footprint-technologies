@@ -61,6 +61,21 @@ export default function Home() {
           <Link className="pill dark" href="/contact">Let&apos;s Talk <span>→</span></Link>
         </header>
         <div className="heroMask" aria-hidden="true" />
+        <div className="heroDecor" aria-hidden="true">
+          <div className="heroScript">Same Continent.<br/><b>Greater Possibilities.</b></div>
+          <svg className="heroNetwork" viewBox="0 0 760 220" preserveAspectRatio="none">
+            <g fill="none" stroke="rgba(239,184,70,.75)" strokeWidth="1">
+              <path d="M20 180 Q190 18 360 170"/>
+              <path d="M90 200 Q300 34 540 175"/>
+              <path d="M170 190 Q360 20 720 188"/>
+              <path d="M340 185 Q510 72 735 150"/>
+            </g>
+            <g fill="#f4b73c">
+              <circle cx="90" cy="170" r="3"/><circle cx="220" cy="130" r="3"/><circle cx="360" cy="170" r="3"/><circle cx="470" cy="120" r="3"/><circle cx="590" cy="156" r="3"/><circle cx="710" cy="188" r="3"/>
+            </g>
+          </svg>
+          <div className="heroLocation"><span>●</span> CAPE TOWN, SOUTH AFRICA<br/><small>OUR HOME. A BRIGHTER AFRICA.</small></div>
+        </div>
         <div className="shell homeHeroInner">
           <div className="homeHeroCopy">
             <p className="eyebrow">PEOPLE. TECHNOLOGY. OPPORTUNITY. ACROSS AFRICA.</p>
@@ -94,7 +109,7 @@ export default function Home() {
             <Link className="pill green smallPill" href="/about">Our Story <span>→</span></Link>
           </div>
           <div className="purposeMap" role="img" aria-label="Illuminated connected network map of Africa">
-            <img src="/africa-network-approved.svg" alt="" />
+            <img src="/africa-network-approved.webp" alt="" />
           </div>
           <aside className="purposeStats">
             <div><strong>54</strong><span>AFRICAN COUNTRIES</span></div>
