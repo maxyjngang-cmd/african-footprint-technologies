@@ -1,13 +1,13 @@
 import Link from "next/link";
 
 const platforms = [
-  {name:"Salesforce",href:"/platforms/salesforce",logo:"/platform-salesforce.svg"},
-  {name:"Zoho CRM",href:"/platforms/zoho-crm",logo:"/platform-zoho-crm.svg"},
-  {name:"ServiceNow",href:"/platforms/servicenow",logo:"/platform-servicenow.svg"},
-  {name:"airSlate SignNow",href:"/platforms/signnow",logo:"/platform-signnow.svg"},
-  {name:"Docusign",href:"/platforms/docusign",logo:"/platform-docusign.svg"},
-  {name:"Oracle NetSuite",href:"/platforms/netsuite",logo:"/platform-netsuite.svg"},
-  {name:"AWS",href:"/platforms/aws",logo:"/platform-aws.svg"},
+  {name:"Salesforce",slug:"salesforce",href:"/platforms/salesforce",logo:"https://www.salesforce.com/news/wp-content/uploads/sites/3/2021/05/Salesforce-logo.jpg?w=1024"},
+  {name:"Zoho CRM",slug:"zoho",href:"/platforms/zoho-crm",logo:"/platform-zoho-crm.svg"},
+  {name:"ServiceNow",slug:"servicenow",href:"/platforms/servicenow",logo:"https://www.servicenow.com/content/dam/now-www/en-us/images/global-nav/logo/servicenow-header-logo.svg"},
+  {name:"airSlate SignNow",slug:"signnow",href:"/platforms/signnow",logo:"/platform-signnow.svg"},
+  {name:"Docusign",slug:"docusign",href:"/platforms/docusign",logo:"/platform-docusign.svg"},
+  {name:"Oracle NetSuite",slug:"netsuite",href:"/platforms/netsuite",logo:"/platform-netsuite.svg"},
+  {name:"AWS",slug:"aws",href:"/platforms/aws",logo:"/platform-aws.svg"},
 ];
 
 export default function PlatformExpertise(){
@@ -19,7 +19,7 @@ export default function PlatformExpertise(){
         <p>We provide consulting services to help African organisations select, implement, integrate and optimise the world&apos;s leading platforms.</p>
       </div>
       <div className="platformLogoStrip" aria-label="Primary technology platforms">
-        {platforms.map((platform)=><Link className="platformLogoItem" href={platform.href} key={platform.name} aria-label={`${platform.name} consulting`}><img src={platform.logo} alt={platform.name}/></Link>)}
+        {platforms.map((platform)=><Link className={`platformLogoItem platform-${platform.slug}`} href={platform.href} key={platform.name} aria-label={`${platform.name} consulting`}><img src={platform.logo} alt={platform.name}/></Link>)}
       </div>
       <p className="srOnly">Platform names and trademarks belong to their respective owners. Inclusion describes AFT&apos;s consulting focus and does not imply official partnership or certification unless explicitly stated.</p>
     </div>
