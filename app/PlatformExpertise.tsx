@@ -1,3 +1,15 @@
-import Link from "next/link";
-const platforms=[{name:"Salesforce",focus:"CRM & Customer Experience",slug:"salesforce"},{name:"Zoho CRM",focus:"CRM & Business Operations",slug:"zoho-crm"},{name:"ServiceNow",focus:"Enterprise Service Management",slug:"servicenow"},{name:"SignNow",focus:"Digital Signature Workflows",slug:"signnow"},{name:"DocuSign",focus:"Agreements & eSignature",slug:"docusign"},{name:"NetSuite",focus:"Cloud ERP & Business Systems",slug:"netsuite"},{name:"AWS",focus:"Cloud Infrastructure & Services",slug:"aws"}];
-export default function PlatformExpertise(){return <section className="platforms" id="platforms"><div className="shell"><div className="platformIntro"><div><p className="eyebrow">OUR PRIMARY TECHNOLOGY PLATFORMS</p><h2>Global platforms.<br/><em>African expertise.</em></h2></div><div><p>We provide consulting, implementation, integration, optimisation and ongoing enablement across leading cloud and enterprise technology platforms.</p><p className="platformNote">Platform names and trademarks belong to their respective owners. Inclusion here describes our consulting focus and does not imply an official vendor partnership or certification unless explicitly stated.</p></div></div><div className="platformGrid">{platforms.map(p=><Link key={p.name} className="platformCard" href={`/platforms/${p.slug}`}><span className="platformWordmark">{p.name}</span><small>{p.focus}</small><span className="platformArrow">→</span></Link>)}</div><div className="platformServices"><span>Strategy & Roadmaps</span><span>Implementation</span><span>Integration</span><span>Migration</span><span>Optimisation</span><span>Managed Support</span></div></div></section>}
+export default function PlatformExpertise(){
+  return <section className="platforms" id="platforms">
+    <div className="shell platformStrip">
+      <div className="platformStripCopy">
+        <p className="eyebrow">OUR PRIMARY TECHNOLOGY PLATFORMS</p>
+        <h2>Global technology. African expertise.</h2>
+        <p>We provide consulting services to help African organisations select, implement, integrate and optimise the world&apos;s leading platforms.</p>
+      </div>
+      <div className="platformLogoStrip" role="img" aria-label="Salesforce, Zoho CRM, ServiceNow, SignNow, DocuSign, Oracle NetSuite and AWS">
+        <img src="/platform-strip-approved.svg" alt="" />
+      </div>
+      <p className="srOnly">Platform names and trademarks belong to their respective owners. Inclusion describes AFT&apos;s consulting focus and does not imply official partnership or certification unless explicitly stated.</p>
+    </div>
+  </section>;
+}
