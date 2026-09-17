@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./home-reference.css";
+import "./footer-fix.css";
 
 export const metadata: Metadata = {
   title: "African Footprint Technologies | Clouding a Brighter Africa",
