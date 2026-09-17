@@ -7,7 +7,7 @@ export default function PlatformExpertise(){
         <p>We provide consulting services to help African organisations select, implement, integrate and optimise the world&apos;s leading platforms.</p>
       </div>
       <div className="platformLogoStrip" role="img" aria-label="Salesforce, Zoho CRM, ServiceNow, SignNow, DocuSign, Oracle NetSuite and AWS">
-        <img src="/platform-strip-approved.svg" alt="" />
+        <img src="/platform-strip-approved.webp" alt="" />
       </div>
       <p className="srOnly">Platform names and trademarks belong to their respective owners. Inclusion describes AFT&apos;s consulting focus and does not imply official partnership or certification unless explicitly stated.</p>
     </div>
